@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuARQUIVO">
+    <property name="title">
+     <string>ARQUIVO</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionNOVO"/>
+    <addaction name="actionABRIR"/>
+    <addaction name="actionSALVAR"/>
+    <addaction name="actionSALVAR_COMO"/>
+    <addaction name="separator"/>
+    <addaction name="actionIMPRIMIR"/>
+    <addaction name="separator"/>
+    <addaction name="actionFECHAR"/>
+   </widget>
+   <widget class="QMenu" name="menuEDITAR">
+    <property name="title">
+     <string>EDITAR</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionDESFAZER"/>
+    <addaction name="actionREFAZER"/>
+    <addaction name="separator"/>
+    <addaction name="actionCOPIAR"/>
+    <addaction name="actionCOLAR"/>
+    <addaction name="actionRECORTAR"/>
+   </widget>
+   <widget class="QMenu" name="menuSOBRE">
+    <property name="title">
+     <string>SOBRE</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFORMATAR">
+    <property name="title">
+     <string>FORMATAR</string>
+    </property>
+    <addaction name="actionFONTE"/>
+    <addaction name="actionCOR"/>
+    <addaction name="actionCOR_DE_FUNDO"/>
+   </widget>
+   <addaction name="menuARQUIVO"/>
+   <addaction name="menuEDITAR"/>
+   <addaction name="menuFORMATAR"/>
+   <addaction name="menuSOBRE"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNOVO"/>
+   <addaction name="actionABRIR"/>
+   <addaction name="actionSALVAR"/>
+   <addaction name="actionSALVAR_COMO"/>
+   <addaction name="actionCOPIAR"/>
+   <addaction name="actionCOLAR"/>
+   <addaction name="actionRECORTAR"/>
+   <addaction name="actionDESFAZER"/>
+   <addaction name="actionREFAZER"/>
+   <addaction name="actionIMPRIMIR"/>
+   <addaction name="actionFONTE"/>
+   <addaction name="actionCOR"/>
+   <addaction name="actionCOR_DE_FUNDO"/>
+   <addaction name="actionFECHAR"/>
+  </widget>
+  <action name="actionNOVO">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/novo.ico</normaloff>:/icones/icons/icons/novo.ico</iconset>
+   </property>
+   <property name="text">
+    <string>NOVO</string>
+   </property>
+  </action>
+  <action name="actionABRIR">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/abrir.ico</normaloff>:/icones/icons/icons/abrir.ico</iconset>
+   </property>
+   <property name="text">
+    <string>ABRIR</string>
+   </property>
+  </action>
+  <action name="actionSALVAR">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/salvar.ico</normaloff>:/icones/icons/icons/salvar.ico</iconset>
+   </property>
+   <property name="text">
+    <string>SALVAR</string>
+   </property>
+  </action>
+  <action name="actionSALVAR_COMO">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/salvarcomo.ico</normaloff>:/icones/icons/icons/salvarcomo.ico</iconset>
+   </property>
+   <property name="text">
+    <string>SALVAR COMO</string>
+   </property>
+  </action>
+  <action name="actionCOPIAR">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/copiar.ico</normaloff>:/icones/icons/icons/copiar.ico</iconset>
+   </property>
+   <property name="text">
+    <string>COPIAR</string>
+   </property>
+  </action>
+  <action name="actionRECORTAR">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/recortar.ico</normaloff>:/icones/icons/icons/recortar.ico</iconset>
+   </property>
+   <property name="text">
+    <string>RECORTAR</string>
+   </property>
+  </action>
+  <action name="actionCOLAR">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/colar.ico</normaloff>:/icones/icons/icons/colar.ico</iconset>
+   </property>
+   <property name="text">
+    <string>COLAR</string>
+   </property>
+  </action>
+  <action name="actionDESFAZER">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/desfazer.ico</normaloff>:/icones/icons/icons/desfazer.ico</iconset>
+   </property>
+   <property name="text">
+    <string>DESFAZER</string>
+   </property>
+  </action>
+  <action name="actionREFAZER">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/refazer.ico</normaloff>:/icones/icons/icons/refazer.ico</iconset>
+   </property>
+   <property name="text">
+    <string>REFAZER</string>
+   </property>
+  </action>
+  <action name="actionFECHAR">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/fechar.ico</normaloff>:/icones/icons/icons/fechar.ico</iconset>
+   </property>
+   <property name="text">
+    <string>FECHAR</string>
+   </property>
+  </action>
+  <action name="actionFONTE">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/ingeneral_thefont_13081.ico</normaloff>:/icones/icons/icons/ingeneral_thefont_13081.ico</iconset>
+   </property>
+   <property name="text">
+    <string>FONTE</string>
+   </property>
+  </action>
+  <action name="actionCOR">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/corfonte.ico</normaloff>:/icones/icons/icons/corfonte.ico</iconset>
+   </property>
+   <property name="text">
+    <string>COR DA FONTE</string>
+   </property>
+  </action>
+  <action name="actionCOR_DE_FUNDO">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/fundoFonte.ico</normaloff>:/icones/icons/icons/fundoFonte.ico</iconset>
+   </property>
+   <property name="text">
+    <string>COR DE FUNDO</string>
+   </property>
+  </action>
+  <action name="actionIMPRIMIR">
+   <property name="icon">
+    <iconset resource="icones.qrc">
+     <normaloff>:/icones/icons/icons/impressora.ico</normaloff>:/icones/icons/icons/impressora.ico</iconset>
+   </property>
+   <property name="text">
+    <string>IMPRIMIR</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icones.qrc"/>
+ </resources>
+ <connections/>
+</ui>

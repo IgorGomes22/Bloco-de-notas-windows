@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/icones/icons">
+        <file>icons/abrir.ico</file>
+        <file>icons/colar.ico</file>
+        <file>icons/copiar.ico</file>
+        <file>icons/corfonte.ico</file>
+        <file>icons/desfazer.ico</file>
+        <file>icons/fechar.ico</file>
+        <file>icons/fundo.ico</file>
+        <file>icons/fundoFonte.ico</file>
+        <file>icons/impressora.ico</file>
+        <file>icons/ingeneral_thefont_13081.ico</file>
+        <file>icons/novo.ico</file>
+        <file>icons/recortar.ico</file>
+        <file>icons/refazer.ico</file>
+        <file>icons/salvar.ico</file>
+        <file>icons/salvarcomo.ico</file>
+    </qresource>
+</RCC>
